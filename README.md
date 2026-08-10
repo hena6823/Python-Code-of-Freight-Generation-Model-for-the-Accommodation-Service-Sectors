@@ -133,13 +133,21 @@ A recommended repository structure is:
 accommodation-freight-generation-model/
 │
 ├── README.md
+
 ├── Accommodation_Freight_Generation_Model.ipynb
+
 ├── data/
+
 │   └── [data file, if publicly shareable]
+
 ├── figures/
+
 │   └── [generated figures]
+
 └── results/
+
     └── [model results, if applicable]
+    
 Reproducibility
 
 To reproduce the analysis, open the Jupyter Notebook and run the cells sequentially.
