@@ -159,29 +159,6 @@ statsmodels
 scipy
 
 The principal modelling procedures use LinearRegression from scikit-learn and OLS regression from statsmodels.
-
-Repository Contents
-
-A recommended repository structure is:
-
-accommodation-freight-generation-model/
-
-│
-├── README.md
-
-├── Accommodation_Freight_Generation_Model.ipynb
-
-├── data/
-
-│   └── [data file, if publicly shareable]
-
-├── figures/
-
-│   └── [generated figures]
-
-└── results/
-
-    └── [model results, if applicable]
     
 Reproducibility
 
