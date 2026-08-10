@@ -17,15 +17,21 @@ The dataset contains 277 accommodation establishments.
 The analysis considers both outbound freight production and inbound freight attraction.
 
 Variables
+
 Dependent Variables
+
 Freight Production (FP): Quantity of outbound freight in ton/year.
+
 Freight Attraction (FA): Quantity of inbound freight in ton/year.
+
 Explanatory Variables
 
 The models use three establishment-level variables:
 
 Number of Years in Operation
+
 Number of Employees
+
 Gross Floor Area (m²)
 
 These variables were selected because they represent important operational and physical characteristics of accommodation establishments.
@@ -35,14 +41,23 @@ Methodology
 The Python workflow includes:
 
 Importing and inspecting the establishment-level dataset.
+
 Examining descriptive statistics and data structure.
+
 Checking for missing and duplicated observations.
+
 Exploring the distributions of the variables through graphical analysis.
+
 Separating the explanatory and dependent variables.
+
 Dividing the data into training and hold-out test sets.
+
 Estimating linear regression models using scikit-learn.
+
 Estimating OLS models using statsmodels.
+
 Calculating regression coefficients and statistical significance.
+
 Evaluating model performance using MAE, RMSE, and R².
 
 For both FP and FA, 80% of the observations were used for model estimation and 20% were reserved for hold-out testing.
@@ -50,7 +65,9 @@ For both FP and FA, 80% of the observations were used for model estimation and 2
 For the Accommodation sector, this resulted in:
 
 Training observations: 221
+
 Hold-out test observations: 56
+
 Model Specification
 
 The general form of the regression model is:
@@ -60,11 +77,17 @@ Y = β₀ + β₁X₁ + β₂X₂ + β₃X₃ + ε
 where:
 
 Y = Freight Production or Freight Attraction
+
 β₀ = intercept
+
 X₁ = Number of Years in Operation
+
 X₂ = Number of Employees
+
 X₃ = Gross Floor Area (m²)
+
 ε = error term
+
 Freight Production Model
 
 The estimated Accommodation FP equation is:
@@ -82,12 +105,19 @@ Model Performance
 The Accommodation models demonstrate strong explanatory and predictive performance.
 
 Freight Production
+
 R²: approximately 0.990
+
 MAE: 49.74 ton/year
+
 RMSE: 62.79 ton/year
+
 Freight Attraction
+
 R²: approximately 0.992
+
 MAE: 29.97 ton/year
+
 RMSE: 38.57 ton/year
 
 The results indicate that the selected establishment characteristics explain a large proportion of the observed variation in freight generation within the Accommodation sector.
@@ -97,12 +127,19 @@ Statistical Analysis
 The statsmodels OLS implementation is used to obtain:
 
 Regression coefficients
+
 Standard errors
+
 t-statistics
+
 p-values
+
 R² and adjusted R²
+
 F-statistics
+
 Confidence intervals
+
 Full regression summaries
 
 The analysis also reports the statistical significance of the individual explanatory variables.
@@ -120,9 +157,6 @@ seaborn
 scikit-learn
 statsmodels
 scipy
-
-
-
 
 The principal modelling procedures use LinearRegression from scikit-learn and OLS regression from statsmodels.
 
