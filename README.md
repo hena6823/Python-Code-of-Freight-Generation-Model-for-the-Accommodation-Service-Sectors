@@ -131,6 +131,7 @@ Repository Contents
 A recommended repository structure is:
 
 accommodation-freight-generation-model/
+
 │
 ├── README.md
 
